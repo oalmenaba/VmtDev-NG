@@ -4,12 +4,15 @@ import { TableButtonComponent } from './table-button/table-button.component';
 import { FormsModule } from '@angular/forms';
 import { CrudButtonComponent } from './crud-button/crud-button.component';
 
+import { QuantityPipePipe } from '../../pipes/qunatity-pipe.pipe';
+
 
 
 @NgModule({
   declarations: [
     TableButtonComponent,
-    CrudButtonComponent
+    CrudButtonComponent,
+    QuantityPipePipe
   ],
   imports: [
     CommonModule,
@@ -17,7 +20,8 @@ import { CrudButtonComponent } from './crud-button/crud-button.component';
   ],
   exports: [
     TableButtonComponent,
-    CrudButtonComponent
+    CrudButtonComponent,
+    QuantityPipePipe
   ]
 })
 export class SharedModule { }
